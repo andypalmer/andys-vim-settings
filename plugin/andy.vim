@@ -3,7 +3,7 @@ set nocompatible
 " Let me open a new file before saving this one!
 set hidden
 
-colorscheme solarized
+colorscheme desert
 syntax on
 set shiftwidth=2 tabstop=2 expandtab
 set number
