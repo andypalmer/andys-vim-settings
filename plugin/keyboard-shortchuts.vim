@@ -1,6 +1,6 @@
 let maplocalleader = ","
 nnoremap <LocalLeader> :noh<CR> " Clear highlighting
-nnoremap <LocalLeader>W :s/\s\+$//<CR>:let @/=''<CR> " Strip trailing whitespace on this line
+nnoremap <LocalLeader>W :call APFixWhitespace()
 
 nnoremap <LocalLeader>p :CtrlPBuffer<CR>
 
