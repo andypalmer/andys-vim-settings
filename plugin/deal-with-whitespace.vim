@@ -4,7 +4,7 @@ set list
 function APFixWhitespace()
   execute 'retab'
   execute 'norm gg=G'
-  execute '%s/\s\+$//'
+  execute '%s/\s\+$//e'
 endfunction
 
 autocmd FileType ruby :call APFixWhitespace()
