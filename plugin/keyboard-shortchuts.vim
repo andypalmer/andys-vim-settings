@@ -4,4 +4,4 @@ nnoremap <LocalLeader>W :call APFixWhitespace()
 
 nnoremap <LocalLeader>p :CtrlPBuffer<CR>
 
-nnoremap <LocalLeader>r :!bundle exec rspec --color %<CR>
+nnoremap <LocalLeader>r :w <bar> :!bundle exec rspec --color %<CR>
