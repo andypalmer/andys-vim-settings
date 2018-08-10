@@ -1,5 +1,8 @@
-nnoremap <buffer> <LocalLeader>r :w <bar> :!bundle exec rspec --require spec_helper --color %<CR>
+nnoremap <buffer> <LocalLeader>r :w <bar> :call RunCurrentSpecFile()<CR>
 
 if get(g:, "not_an_andy_project", 0) == 0
-  :call whitespace#APFixWhitespace()
+  " FIXME 20180810 - for some reason, executing APFixWhitespace here unindents
+  " everything. It's probably related to being called before the syntax file
+  " is loaded.
+  ":call whitespace#APFixWhitespace()
 end
